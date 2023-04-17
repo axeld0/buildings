@@ -1,3 +1,5 @@
+package Model;
+
 import Model.Building;
 
 import java.util.ArrayList;

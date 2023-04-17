@@ -1,7 +1,4 @@
-import Model.Building;
-import Model.MultiGymnasium;
-import Model.OfficeBuilding;
-import Model.SportsFacility;
+import Model.*;
 
 public class Main {
     public static void main(String[] args) {

@@ -6,18 +6,25 @@ import Model.SportsFacility;
 public class Main {
     public static void main(String[] args) {
 
-        SportsFacility newMultiGym = new MultiGymnasium();
-        Building newOffice = new OfficeBuilding();
-        int i1 = newMultiGym.getTypeOfBuilding();
-        if(i1 == 1)
-        {
-            System.out.println("This building is a multi gymnasium.");
-        }
-        double surface = newMultiGym.getBuildingSurface();
-        System.out.println("this Building has [" + surface + "] m2.");
+        test newTest = new test();
 
-        double offices = newOffice.getBuildingSurface();
-        System.out.println("this office has [" + offices + "] offices");
+        Building multiGym1 = new MultiGymnasium(1,456.65 );
+        Building multiGym2 = new MultiGymnasium(1, 123.1);
+        Building multiGym3 = new MultiGymnasium(1, 45.4);
+        Building office1 = new OfficeBuilding(2, 65.45,65 );
+        Building office2 = new OfficeBuilding(2, 12.12, 74);
+
+        newTest.addBuilding(multiGym1);
+        newTest.addBuilding(multiGym2);
+        newTest.addBuilding(multiGym3);
+        newTest.addBuilding(office1);
+        newTest.addBuilding(office2);
+
+
+        String buildingList = "";
+        System.out.println(newTest.displayBuildings(buildingList));
+
+
     }
 
 }

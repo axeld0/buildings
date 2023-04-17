@@ -1,10 +1,19 @@
 package Model;
 
-public class MultiGymnasium implements  Building , SportsFacility{
+public class MultiGymnasium extends SportsFacility  implements  Building {
+
+    private int type;
+    private double surface;
+
+    public MultiGymnasium (int type, double surface)
+    {
+        this.type = type;
+        this.surface = surface;
+    }
 
     @Override
     public double getBuildingSurface() {
-        return 1234;
+        return surface;
     }
 
 
@@ -14,6 +23,10 @@ public class MultiGymnasium implements  Building , SportsFacility{
      */
     @Override
     public int getTypeOfBuilding() {
-        return 1;
+        return type;
     }
+
+    @Override
+    public int getOffices (){return 0;}
+
 }

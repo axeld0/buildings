@@ -1,7 +1,14 @@
 package Model;
 
-public interface SportsFacility extends Building {
+public abstract class SportsFacility implements Building {
 
-    public int getTypeOfBuilding();
+    private int typeOfBuilding;
+
+    public int getTypeOfBuilding()
+    {
+        return typeOfBuilding = 1;
+    }
+
+
 
 }

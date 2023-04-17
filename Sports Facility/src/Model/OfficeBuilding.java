@@ -1,14 +1,43 @@
 package Model;
 
-public class OfficeBuilding implements Building{
+public class OfficeBuilding  extends SportsFacility implements Building
+{
+    private int typeOfBuilding ;
+    private double surface;
 
+    private int offices;
+
+
+
+    public  OfficeBuilding ()
+    {
+        typeOfBuilding = 0;
+        surface = 0;
+        offices =0;
+    }
+    public OfficeBuilding (int typeOfBuilding, double surface, int offices)
+    {
+        this.typeOfBuilding = typeOfBuilding;
+        this.surface =  surface;
+        this.offices = offices;
+    }
 
     /**
      *
      * @return how much offices it has
      */
-    @Override
-    double getBuildinSurface (){
-        return 456;
+
+    public int getOffices()
+    {
+        return offices;
     }
+
+
+    @Override
+    public double getBuildingSurface (){
+        return surface ;
+    }
+
+    @Override
+    public int getTypeOfBuilding (){return typeOfBuilding;}
 }

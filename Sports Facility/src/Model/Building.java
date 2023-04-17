@@ -1,6 +1,6 @@
 package Model;
 
 public interface Building {
-    public int getBuildingSurface();
+    public double getBuildingSurface();
 
 }

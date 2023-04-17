@@ -3,7 +3,7 @@ package Model;
 public class MultiGymnasium implements  Building , SportsFacility{
 
     @Override
-    public int getBuildingSurface() {
+    public double getBuildingSurface() {
         return 1234;
     }
 

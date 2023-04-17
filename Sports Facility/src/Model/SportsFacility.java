@@ -1,13 +1,9 @@
 package Model;
 
-public abstract class SportsFacility implements Building {
+public interface SportsFacility extends Building {
 
-    private int typeOfBuilding;
-
-    public int getTypeOfBuilding()
-    {
-        return typeOfBuilding = 1;
-    }
+    @Override
+    public int getTypeOfBuilding();
 
 
 

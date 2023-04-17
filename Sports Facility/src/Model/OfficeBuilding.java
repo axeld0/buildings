@@ -1,10 +1,9 @@
 package Model;
 
-public class OfficeBuilding  extends SportsFacility implements Building
+public class OfficeBuilding implements Building, SportsFacility
 {
     private int typeOfBuilding ;
     private double surface;
-
     private int offices;
 
 

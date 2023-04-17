@@ -1,6 +1,6 @@
 package Model;
 
-public class MultiGymnasium extends SportsFacility  implements  Building {
+public class MultiGymnasium implements  Building, SportsFacility {
 
     private int type;
     private double surface;

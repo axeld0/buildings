@@ -1,6 +1,6 @@
 package Model;
 
-public class OfficeBuilding implements Building, SportsFacility
+public class OfficeBuilding implements Building
 {
     private int typeOfBuilding ;
     private double surface;
@@ -37,6 +37,5 @@ public class OfficeBuilding implements Building, SportsFacility
         return surface ;
     }
 
-    @Override
     public int getTypeOfBuilding (){return typeOfBuilding;}
 }

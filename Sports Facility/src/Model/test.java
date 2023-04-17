@@ -27,8 +27,7 @@ public class test {
         StringBuilder buildingListStringBuilder = new StringBuilder(buildingListString);
         for ( Building b : buildingList)
         {
-            buildingListStringBuilder.append("Type of building (1 = Sports Facility/ 2 = Office Building) : ").append(b.getTypeOfBuilding()).append("\nSurface : ").append(b.getBuildingSurface()).append("\nOffices :"+ b.getOffices()+ "\n");
-        } buildingListString = buildingListStringBuilder.toString();
+            buildingListStringBuilder = "Type of building (1 = Sports Facility/ 2 = Office Building) : " +
         return buildingListString;
     }
 

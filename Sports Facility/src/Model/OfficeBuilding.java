@@ -2,7 +2,7 @@ package Model;
 
 public class OfficeBuilding implements Building
 {
-    private int typeOfBuilding ;
+    private int type ;
     private double surface;
     private int offices;
 
@@ -10,13 +10,13 @@ public class OfficeBuilding implements Building
 
     public  OfficeBuilding ()
     {
-        typeOfBuilding = 0;
+        type = 0;
         surface = 0;
         offices =0;
     }
-    public OfficeBuilding (int typeOfBuilding, double surface, int offices)
+    public OfficeBuilding (int type, double surface, int offices)
     {
-        this.typeOfBuilding = typeOfBuilding;
+        this.type = type;
         this.surface =  surface;
         this.offices = offices;
     }
@@ -37,5 +37,14 @@ public class OfficeBuilding implements Building
         return surface ;
     }
 
-    public int getTypeOfBuilding (){return typeOfBuilding;}
+    public int getTypeOfBuilding (){return type;}
+
+    @Override
+    public String toString() {
+        return "OfficeBuilding{" +
+                "type=" + type +
+                ", surface=" + surface +
+                ", offices=" + offices +
+                "}\n";
+    }
 }

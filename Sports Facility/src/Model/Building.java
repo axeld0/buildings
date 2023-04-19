@@ -1,8 +1,8 @@
 package Model;
 
 public interface Building {
-    public double getBuildingSurface();
+    double getBuildingSurface();
 
-    public int getOffices();
+
 
 }

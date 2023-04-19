@@ -18,8 +18,7 @@ public class Main {
         newTest.addBuilding(office2);
 
 
-        String buildingList = "";
-        System.out.println(newTest.displayBuildings(buildingList));
+        System.out.println("List of buildings : \n" + newTest.displayBuildings());
 
 
     }

@@ -20,15 +20,16 @@ public class test {
 
     /**
      * IT SHOWS AN LIST OF BUILDINGS
-     * @param buildingListString a string
      */
-    public String displayBuildings (String buildingListString)
+    public String displayBuildings ()
     {
-        StringBuilder buildingListStringBuilder = new StringBuilder(buildingListString);
-        for ( Building b : buildingList)
-        {
-            buildingListStringBuilder = "Type of building (1 = Sports Facility/ 2 = Office Building) : " +
-        return buildingListString;
+       String displayB = "";
+        for ( Building b : buildingList) {
+
+            displayB+= b.toString();
+
+        }
+        return  displayB;
     }
 
 }

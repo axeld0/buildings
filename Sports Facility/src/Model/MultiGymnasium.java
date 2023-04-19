@@ -27,6 +27,10 @@ public class MultiGymnasium implements  Building, SportsFacility {
     }
 
     @Override
-    public int getOffices (){return 0;}
-
+    public String toString() {
+        return "MultiGymnasium{" +
+                "type=" + type +
+                ", surface=" + surface +
+                "}\n";
+    }
 }
